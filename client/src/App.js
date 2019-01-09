@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
+import Resume from './Components/Resume';
+import Projects from './Components/Projects';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 import {CenteredTabs} from './Components/CenteredTabs.js'
@@ -20,6 +22,8 @@ class App extends React.Component {
         <div>
           <Route exact path="/" component={Home} /> 
           <Route exact path="/about" component={About} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/projects" component={Projects} />
         </div>
       </Router>
       </React.Fragment>

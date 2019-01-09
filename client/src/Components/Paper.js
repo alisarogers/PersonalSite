@@ -19,7 +19,7 @@ export function PaperSheet(props) {
     <div>
       <Paper elevation={4}>
         <Typography variant="h5" component="h3" className="text-center"> 
-          Alisabeth Rogers
+          
         </Typography>
         <Typography component="p">
           Hello! I am a fourth-year Mathematics-Computer Science student at University of California, San Diego.
