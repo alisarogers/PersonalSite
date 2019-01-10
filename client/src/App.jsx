@@ -7,9 +7,7 @@ import Resume from './Components/Resume';
 import Projects from './Components/Projects';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
-import {CenteredTabs} from './Components/CenteredTabs.js'
-import {PaperSheet} from './Components/Paper.js'
-import {SimpleCard} from './Components/Card.js'
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 class App extends React.Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { SimpleCard } from './Card.js'
-import { PaperSheet } from './Paper.js'
-import { CenteredTabs } from './CenteredTabs.js'
+import { SimpleCard } from './Card'
+import { PaperSheet } from './Paper'
+import { CenteredTabs } from './CenteredTabs'
 
 export default class Projects extends Component {
     render() {

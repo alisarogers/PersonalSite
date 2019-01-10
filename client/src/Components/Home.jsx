@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
+import Footer from './Footer/Footer';
 import './Home.css'
-import { SimpleCard } from './Card.js'
-import { CenteredTabs } from './CenteredTabs.js'
+import { SimpleCard } from './Card'
+import { CenteredTabs } from './CenteredTabs'
 
 export default class Home extends Component {
     render() {
@@ -12,6 +12,9 @@ export default class Home extends Component {
           <SimpleCard />
           
           <CenteredTabs />
+
+          <Footer />
+
           </div> 
       )
     }

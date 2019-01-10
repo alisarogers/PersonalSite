@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import { SimpleCard } from './Card.js'
-import { PaperSheet } from './Paper.js'
-import { CenteredTabs } from './CenteredTabs.js'
 import { Typography } from '@material-ui/core';
 
 export default class About extends Component {

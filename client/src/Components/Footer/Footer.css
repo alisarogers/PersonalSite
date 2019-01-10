@@ -1,0 +1,23 @@
+/* Footer CSS */
+.Site{
+	flex: 1 0 auto;
+}
+
+.Site-body{
+	padding-top: 7em;
+}
+
+.site-footer{
+	flex-shrink: 0;
+	text-align: center;
+	
+	width: 100%;
+}
+
+.icon{
+	
+	width: 2em;
+	height: 2em;
+	
+	
+}

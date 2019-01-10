@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { SimpleCard } from './Card.js'
-import { PaperSheet } from './Paper.js'
-import { CenteredTabs } from './CenteredTabs.js'
+import Grid from '@material-ui/core/Grid';
 import { Document, Page } from 'react-pdf'
 import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
+import './Resume.css'
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class Resume extends Component {
@@ -21,13 +21,13 @@ export default class Resume extends Component {
         const { pageNumber, numPages } = this.state;
 
         return (
-            <div>
+            <Grid >
                
-                <Document file={useResume} onLoadSuccess={this.onDocumentLoadSuccess}>  <Page pageNumber={pageNumber} /> 
+                <Document className="center" file={useResume} onLoadSuccess={this.onDocumentLoadSuccess}>  <Page renderTextLayer={false} pageNumber={pageNumber} /> 
                 
                 </Document>
             
-            </div>
+            </Grid>
         )
     }
 }

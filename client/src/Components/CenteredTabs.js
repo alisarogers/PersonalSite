@@ -59,7 +59,7 @@ export class CenteredTabs extends React.Component {
         {this.state.value === 'one' && <TabContainer></TabContainer>}
         {this.state.value === 'two' && <TabContainer><About /></TabContainer>}
         {this.state.value === 'three' && <TabContainer><Projects /></TabContainer>}
-        {this.state.value === 'four' && <TabContainer><Resume /></TabContainer>}
+        {this.state.value === 'four' && <TabContainer alignItems="center"><Resume /></TabContainer>}
       </Paper>
     );
   }
