@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { SimpleCard } from './Card'
-import { PaperSheet } from './Paper'
-import { CenteredTabs } from './CenteredTabs'
+
+import { ProjectsTab } from './Tab/ProjectsTab'
 
 export default class Projects extends Component {
     render() {
         return (
             <div>
-                
+                <SimpleCard />
+                <ProjectsTab />
                 <p> coming soon! </p>
                 
             

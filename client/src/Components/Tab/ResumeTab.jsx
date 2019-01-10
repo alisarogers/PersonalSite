@@ -7,9 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import { Link } from 'react-router-dom'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import Typography from '@material-ui/core/Typography';
-import About from './About';
-import Resume from './Resume';
-import Projects from './Projects';
+
 
 function TabContainer(props) {
   return (
@@ -29,9 +27,9 @@ const styles = {
   },
 };
 
-export class CenteredTabs extends React.Component {
+export class ResumeTab extends React.Component {
   state = {
-    value: "one",
+    value: "four",
   };
 
   handleChange = (event, value) => {
@@ -51,22 +49,22 @@ export class CenteredTabs extends React.Component {
           centered
         >
           <Tab value="one" label="Home" href="/"/>
-          <Tab value="two" label="About Me" />
-          <Tab value="three" label="Projects"  />
-          <Tab value="four" label="Resume" />
+          <Tab value="two" label="About Me" href="/about"/>
+          <Tab value="three" label="Projects" href="/projects"  />
+          <Tab value="four" label="Resume" href="/resume"/>
           
         </Tabs>
         {this.state.value === 'one' && <TabContainer></TabContainer>}
-        {this.state.value === 'two' && <TabContainer><About /></TabContainer>}
-        {this.state.value === 'three' && <TabContainer><Projects /></TabContainer>}
-        {this.state.value === 'four' && <TabContainer alignItems="center"><Resume /></TabContainer>}
+        {this.state.value === 'two' && <TabContainer></TabContainer>}
+        {this.state.value === 'three' && <TabContainer></TabContainer>}
+        {this.state.value === 'four' && <TabContainer alignItems="center"></TabContainer>}
       </Paper>
     );
   }
 }
 
-CenteredTabs.propTypes = {
+ResumeTab.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CenteredTabs);
+export default withStyles(styles)(ResumeTab);
