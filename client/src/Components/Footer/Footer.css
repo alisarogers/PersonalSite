@@ -8,9 +8,12 @@
 }
 
 .site-footer{
+	position: fixed;
 	flex-shrink: 0;
 	text-align: center;
 	width: 100%;
+	padding-top: 10px;
+	bottom: 0px;
 }
 
 .icon{

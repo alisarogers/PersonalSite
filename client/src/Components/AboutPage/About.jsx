@@ -14,7 +14,7 @@ export default class About extends Component {
 
                 <NavTab tabValue="about" />
                 <Bio />
-                <Footer />
+                
             </div>
         )
     }

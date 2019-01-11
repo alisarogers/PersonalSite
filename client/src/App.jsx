@@ -3,8 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/AboutPage/About';
-import Resume from './Components/Resume';
-import Projects from './Components/Projects';
+import Resume from './Components/Resume/Resume';
+import Projects from './Components/Projects/Projects';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 

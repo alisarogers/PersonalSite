@@ -4,9 +4,9 @@ import { Document, Page } from 'react-pdf'
 import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
 import './Resume.css'
-import { SimpleCard } from './Card'
-import Footer from './Footer/Footer';
-import { NavTab } from './Tab/NavTab'
+import { SimpleCard } from '../Card'
+import Footer from '../Footer/Footer';
+import { NavTab } from '../Tab/NavTab'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class Resume extends Component {
@@ -31,7 +31,7 @@ export default class Resume extends Component {
                     <Page renderTextLayer={false} pageNumber={pageNumber} /> 
                 
                 </Document>
-                <Footer />
+                
             </Grid>
         )
     }

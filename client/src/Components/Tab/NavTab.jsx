@@ -58,8 +58,4 @@ export class NavTab extends React.Component {
   }
 }
 
-NavTab.propTypes = {
-  
-};
-
 export default withStyles(styles)(NavTab);

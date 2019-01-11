@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { SimpleCard } from './Card'
-import Footer from './Footer/Footer';
-import { NavTab } from './Tab/NavTab'
+import { SimpleCard } from '../Card'
+import Footer from '../Footer/Footer';
+import { NavTab } from '../Tab/NavTab'
+import { ProjectsList } from './ProjectsList'
 
 export default class Projects extends Component {
     render() {
@@ -9,8 +10,8 @@ export default class Projects extends Component {
             <div>
                 <SimpleCard />
                 <NavTab tabValue="projects" />
-                <p> coming soon! </p>
-                <Footer />
+                <ProjectsList />
+                
                 
             
             </div>
