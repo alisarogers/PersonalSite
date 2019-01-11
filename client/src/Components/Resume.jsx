@@ -5,8 +5,8 @@ import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
 import './Resume.css'
 import { SimpleCard } from './Card'
-import {ResumeTab} from './Tab/ResumeTab'
-
+import Footer from './Footer/Footer';
+import { NavTab } from './Tab/NavTab'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class Resume extends Component {
@@ -26,11 +26,12 @@ export default class Resume extends Component {
             
             <Grid >
                <SimpleCard />
-                <ResumeTab />
-                <Document className="center" file={useResume} onLoadSuccess={this.onDocumentLoadSuccess}>  <Page renderTextLayer={false} pageNumber={pageNumber} /> 
+                <NavTab tabValue="resume" />
+                <Document className="resume-center" file={useResume} onLoadSuccess={this.onDocumentLoadSuccess}>  
+                    <Page renderTextLayer={false} pageNumber={pageNumber} /> 
                 
                 </Document>
-            
+                <Footer />
             </Grid>
         )
     }

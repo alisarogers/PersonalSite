@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer/Footer';
 import './Home.css'
 import { SimpleCard } from './Card'
-import { HomeTab } from './Tab/HomeTab'
+import { NavTab } from './Tab/NavTab'
 
 export default class Home extends Component {
     render() {
@@ -11,7 +11,7 @@ export default class Home extends Component {
         <div>
           <SimpleCard />
           
-          <HomeTab />
+          <NavTab tabValue="home" />
 
           <Footer />
 
