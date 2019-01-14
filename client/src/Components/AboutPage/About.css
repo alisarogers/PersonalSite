@@ -5,3 +5,13 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.media {
+    height:200px;
+    width: auto;
+}
+
+.media2 {
+    height: 10%;
+    width: auto;
+}

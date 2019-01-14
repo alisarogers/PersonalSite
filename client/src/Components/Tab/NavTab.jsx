@@ -6,7 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
-
+import * as ROUTES from '../../constants/routes'
 
 function TabContainer(props) {
   return (
@@ -43,10 +43,20 @@ export class NavTab extends React.Component {
           textColor="primary"
           centered
         >
-          <Tab value="home" label="Home" href="/"/>
-          <Tab value="about" label="About Me" href="/about"/>
-          <Tab value="projects" label="Projects" href="/projects"  />
-          <Tab value="resume" label="Resume" href="/resume"/>
+          
+        <Link to={ROUTES.LANDING} style={{ textDecoration: 'none' }}>
+            <Tab value="home" label="Home" />
+        </Link>
+        <Link to={ROUTES.ABOUT}>
+            <Tab value="about" label="About Me" />
+        </Link> 
+        <Link to={ROUTES.PROJECTS}>
+            <Tab value="projects" label="Projects" />
+        </Link>  
+        <Link to={ROUTES.RESUME}>
+            <Tab value="resume" label="Resume" />  
+        </Link>
+        
           
         </Tabs>
         {this.state.value === 'home' && <TabContainer></TabContainer>}

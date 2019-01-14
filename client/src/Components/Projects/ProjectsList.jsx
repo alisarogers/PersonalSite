@@ -19,13 +19,77 @@ export function ProjectsList(props) {
   return (
     <div>
       <Paper className="paperStyle" elevation={1}>
-        <Typography variant="h6" component="h3">
-          
+        <Typography variant="display1" color="primary" component="h3">
+          upcoming projects/hackathons
         </Typography>
         <Typography variant="body1">
-          You can check out my Github for my past projects - I'll be updating this page as I develop more!
-          I'll be attending Rose Hacks at UCR January 19-20, the Webroot Hackathon at UCSD on January 26, and SLO hacks at Cal Poly SLO February 1-3. 
+          Rose Hack @ UCR - January 19-20
+          <br />
+          Webroot Hackathon @ UCSD - January 26
+          <br />
+          SLO Hacks @ Cal Poly SLO - February 1-3
+          <br />
+          RPG Chat App (in development) - messaging app that will allow one user to have multiple aliases and
+          duplicate copies of groups with different threads
         </Typography>
+
+        <Typography variant="display1" color="primary" component="h3">
+          past projects
+        </Typography>
+
+        <Typography  variant="h6" href="https://github.com/alisarogers/binarySearchTree">
+          ROOMI 
+        </Typography>
+        <Typography variant="caption">
+        Project Manager - Fall 2018
+        </Typography>
+        <Typography variant="body1">
+        created a web app designed to help roommates coordinate household chores, parking schedules, and grocery lists.
+        </Typography>
+
+        <Typography  variant="h6" href="https://github.com/alisarogers/binarySearchTree">
+        Pathfinder/six degrees of separation
+        </Typography>
+        <Typography variant="caption">
+        april 2018
+        </Typography>
+        <Typography variant="body1">
+        utilized dijkstra's algorithm to implement a program that, given any two actors, can find a path that connects
+        them in as few steps as possible
+        </Typography>
+
+        <Typography  variant="h6" href="https://github.com/alisarogers/binarySearchTree">
+          dictionary tries
+        </Typography>
+        <Typography variant="caption">
+        april 2018
+        </Typography>
+        <Typography variant="body1">
+        implemented an auto-complete and spell-check function using ternary tries
+        </Typography>
+
+        <Typography variant="h6" href="https://github.com/alisarogers/huffmanTree">
+          huffman tree
+        </Typography>
+        <Typography variant="caption">
+        may 2018
+        </Typography>
+        <Typography variant="body1">
+        file compression using huffman encoding, written in c++
+        </Typography>
+
+        <Typography variant="h6" href="https://github.com/alisarogers/binarySearchTree">
+          binary search tree
+        </Typography>
+        <Typography variant="caption">
+        april 2018
+        </Typography>
+        <Typography variant="body1">
+        implemented a binary search tree using C++
+        </Typography>
+
+        
+ 
       </Paper>
     </div>
   );

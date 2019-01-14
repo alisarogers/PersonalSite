@@ -3,12 +3,31 @@
 }
 
 .paperStyle {
-    width: 50%;
+    width: 60%;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    padding-top: 25px;
+    margin-top: 5px;
+    margin-bottom: 10%;
+    padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.smallPaperStyle {
+    width: 33%;
+    text-align: center;
+    display: flex;  
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

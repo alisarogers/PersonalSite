@@ -9,21 +9,22 @@ import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
+import * as ROUTES from './constants/routes';
 
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
       <CssBaseline />
-
       <Router>
         <div>
-          <Route exact path="/" component={Home} /> 
-          <Route exact path="/about" component={About} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/projects" component={Projects} />
+
+        <Route exact path={ROUTES.LANDING} component={Home} /> 
+        <Route path={ROUTES.ABOUT} component={About} />
+        <Route path={ROUTES.RESUME} component={Resume} />
+        <Route path={ROUTES.PROJECTS} component={Projects} />
         </div>
-      </Router>
+      </Router> 
       </React.Fragment>
     );
   }
