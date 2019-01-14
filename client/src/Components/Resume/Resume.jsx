@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import { Document, Page } from 'react-pdf'
+import { Typography } from '@material-ui/core';
 import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
 import './Resume.css'
 import { SimpleCard } from '../Card'
 import Footer from '../Footer/Footer';
+import Paper from '@material-ui/core/Paper';
 import { NavTab } from '../Tab/NavTab'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -26,12 +28,18 @@ export default class Resume extends Component {
             
             <Grid >
                <SimpleCard />
+               
                 <NavTab tabValue="resume" />
+                <Paper className="paperStyle">
+                <Typography variant="display1" color="primary"> 
+                    resume
+               </Typography>
+               
                 <Document className="resume-center" file={useResume} onLoadSuccess={this.onDocumentLoadSuccess}>  
                     <Page renderTextLayer={false} pageNumber={pageNumber} /> 
                 
                 </Document>
-                
+                </Paper>
             </Grid>
         )
     }
