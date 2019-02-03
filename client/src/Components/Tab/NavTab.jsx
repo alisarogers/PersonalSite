@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -17,11 +17,21 @@ function TabContainer(props) {
 }
 
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-};
+// const styles = theme => ({
+//   root: {
+//     flexGrow: 1,
+//   },
+//   palette: {
+//     primary: {
+//       main: '#ce93d8',
+//       light: '#ffc4ff',
+//       dark: '#9c64a6',
+//     },
+//     secondary: {
+//       main: '#f50057',
+//     },
+//   },
+//   });
 
 export class NavTab extends React.Component {
   state = {
@@ -36,29 +46,32 @@ export class NavTab extends React.Component {
    
     return (
       <Paper >
+        
         <Tabs
+          
           value={this.state.value}
           onChange={this.handleChange}
-          indicatorColor="primary"
+          indicatorColor='secondary'
           textColor="primary"
           centered
         >
           
-        <Link to={ROUTES.LANDING} style={{ textDecoration: 'none' }}>
-            <Tab value="home" label="Home" />
+        <Link to={ROUTES.LANDING} >
+            <Tab value="home" label="Home" textColor="primary" />
         </Link>
         <Link to={ROUTES.ABOUT}>
-            <Tab value="about" label="About Me" />
+            <Tab value="about" label="About Me" textColor="primary" />
         </Link> 
         <Link to={ROUTES.PROJECTS}>
-            <Tab value="projects" label="Projects" />
+            <Tab value="projects" label="Projects" textColor="primary"/>
         </Link>  
         <Link to={ROUTES.RESUME}>
-            <Tab value="resume" label="Resume" />  
+            <Tab value="resume" label="Resume" textColor="primary" />  
         </Link>
         
           
         </Tabs>
+       
         {this.state.value === 'home' && <TabContainer></TabContainer>}
         {this.state.value === 'about' && <TabContainer></TabContainer>}
         {this.state.value === 'projects' && <TabContainer></TabContainer>}
@@ -68,4 +81,4 @@ export class NavTab extends React.Component {
   }
 }
 
-export default withStyles(styles)(NavTab);
+export default withStyles()(NavTab);

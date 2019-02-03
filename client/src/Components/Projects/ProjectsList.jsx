@@ -18,8 +18,8 @@ export function ProjectsList(props) {
   const bull = <span >•</span>;
   return (
     <div>
-      <Paper className="paperStyle" elevation={1}>
-        <Typography variant="display1" color="primary" component="h3">
+      <Paper className="bottomPaperStyle" elevation={1}>
+        <Typography variant="display1" color="primary" component="h3" className="text-center">
           upcoming projects/hackathons
         </Typography>
         <Typography variant="body1">
@@ -33,7 +33,7 @@ export function ProjectsList(props) {
           duplicate copies of groups with different threads
         </Typography>
 
-        <Typography variant="display1" color="primary" component="h3">
+        <Typography variant="display1" color="primary" component="h3" className="text-center">
           past projects
         </Typography>
 
@@ -44,7 +44,7 @@ export function ProjectsList(props) {
         Project Manager - Fall 2018
         </Typography>
         <Typography variant="body1">
-        created a web app designed to help roommates coordinate household chores, parking schedules, and grocery lists.
+        created a web app using React designed to help roommates coordinate household chores, parking schedules, and grocery lists.
         </Typography>
 
         <Typography  variant="h6" href="https://github.com/alisarogers/binarySearchTree">

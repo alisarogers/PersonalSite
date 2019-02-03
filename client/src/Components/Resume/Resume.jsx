@@ -31,7 +31,7 @@ export default class Resume extends Component {
                
                 <NavTab tabValue="resume" />
                 <Paper className="paperStyle">
-                <Typography variant="display1" color="primary"> 
+                <Typography variant="display1" color="primary" className="text-center"> 
                     resume
                </Typography>
                
