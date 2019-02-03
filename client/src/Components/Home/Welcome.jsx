@@ -14,7 +14,7 @@ export function Welcome(props) {
   return (
     <div>
       <Paper className="paperStyle" elevation={1}>
-        <Typography variant="display1" color="primary" component="h3" className="text-center">
+        <Typography variant="display1" color="secondary" component="h3" className="text-center">
           welcome!
         </Typography>
         <Typography component="p" paragraph>

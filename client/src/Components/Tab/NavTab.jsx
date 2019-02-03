@@ -7,7 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import * as ROUTES from '../../constants/routes'
-
+import Grid from '@material-ui/core/Grid';
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 0 }}>
@@ -45,7 +45,10 @@ export class NavTab extends React.Component {
   render() {
    
     return (
-      <Paper >
+      <Grid container
+        justify="center">
+      <Grid item xs={7}>
+      <Paper  >
         
         <Tabs
           
@@ -54,6 +57,7 @@ export class NavTab extends React.Component {
           indicatorColor='secondary'
           textColor="primary"
           centered
+          className="padding"
         >
           
         <Link to={ROUTES.LANDING} >
@@ -77,6 +81,8 @@ export class NavTab extends React.Component {
         {this.state.value === 'projects' && <TabContainer></TabContainer>}
         {this.state.value === 'resume' && <TabContainer></TabContainer>}
       </Paper>
+      </Grid>
+      </Grid>
     );
   }
 }

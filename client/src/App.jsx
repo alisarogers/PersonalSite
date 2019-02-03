@@ -16,16 +16,16 @@ import * as ROUTES from './constants/routes';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#ce93d8',
+      main: '#ede7f6',
       light: '#ffc4ff',
       dark: '#9c64a6',
     },
     secondary: {
-      main: '#f50057',
+      main: '#000000',
     },
     overrides: {
       Tabs: {
-        background: '#ce93d8',
+        background: '#ede7f6',
       }
     }
   },
@@ -36,8 +36,6 @@ class App extends React.Component {
     return (
       <div  >
       <MuiThemeProvider theme={theme} >
-     
-      
       
       <Router>
         <div >

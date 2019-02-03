@@ -22,7 +22,7 @@ export function Skills(props) {
   return (
     <div>
       <Paper className="paperStyle" elevation={1}>
-        <Typography variant="display1" color="primary"  component="h3" className="text-center" >
+        <Typography variant="display1" color="secondary"  component="h3" className="text-center" >
           skills
         </Typography>
         <Typography variant="headline" >

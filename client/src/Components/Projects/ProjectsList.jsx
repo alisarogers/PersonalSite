@@ -19,7 +19,7 @@ export function ProjectsList(props) {
   return (
     <div>
       <Paper className="bottomPaperStyle" elevation={1}>
-        <Typography variant="display1" color="primary" component="h3" className="text-center">
+        <Typography variant="display1" color="secondary" component="h3" className="text-center">
           upcoming projects/hackathons
         </Typography>
         <Typography variant="body1">
@@ -33,7 +33,7 @@ export function ProjectsList(props) {
           duplicate copies of groups with different threads
         </Typography>
 
-        <Typography variant="display1" color="primary" component="h3" className="text-center">
+        <Typography variant="display1" color="secondary" component="h3" className="text-center">
           past projects
         </Typography>
 
