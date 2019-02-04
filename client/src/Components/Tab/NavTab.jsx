@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
+import { withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import * as ROUTES from '../../constants/routes'
+import Grid from '@material-ui/core/Grid';
 
 function TabContainer(props) {
   return (
@@ -15,23 +15,6 @@ function TabContainer(props) {
     </Typography>
   );
 }
-
-
-// const styles = theme => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   palette: {
-//     primary: {
-//       main: '#ce93d8',
-//       light: '#ffc4ff',
-//       dark: '#9c64a6',
-//     },
-//     secondary: {
-//       main: '#f50057',
-//     },
-//   },
-//   });
 
 export class NavTab extends React.Component {
   state = {
@@ -45,7 +28,12 @@ export class NavTab extends React.Component {
   render() {
    
     return (
-      <Paper >
+      <Grid container
+        justify="center"
+        gutterbottom={true}
+        spacing={8}>
+      <Grid item xs={8}>
+      <Paper className="tab" >
         
         <Tabs
           
@@ -54,6 +42,8 @@ export class NavTab extends React.Component {
           indicatorColor='secondary'
           textColor="primary"
           centered
+          className="padding"
+          color={"#ce93d8"}
         >
           
         <Link to={ROUTES.LANDING} >
@@ -77,6 +67,8 @@ export class NavTab extends React.Component {
         {this.state.value === 'projects' && <TabContainer></TabContainer>}
         {this.state.value === 'resume' && <TabContainer></TabContainer>}
       </Paper>
+      </Grid>
+      </Grid>
     );
   }
 }

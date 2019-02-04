@@ -6,7 +6,6 @@ import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
 import './Resume.css'
 import { SimpleCard } from '../Card'
-import Footer from '../Footer/Footer';
 import Paper from '@material-ui/core/Paper';
 import { NavTab } from '../Tab/NavTab'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -31,7 +30,7 @@ export default class Resume extends Component {
                
                 <NavTab tabValue="resume" />
                 <Paper className="paperStyle">
-                <Typography variant="display1" color="primary" className="text-center"> 
+                <Typography variant="display1" color="secondary" className="text-center"> 
                     resume
                </Typography>
                

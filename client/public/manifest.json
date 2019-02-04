@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Alisabeth Rogers",
+  "name": "Alisabeth Rogers Personal Site",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://previews.dropbox.com/p/thumb/AAVdoswV2t1wFjFz-a4iEw1a15XoLeH7_TjmoZTqD_Gjpa1r67AyPcsUJV4Fhfz8YmID9AzjXRXexxkmYdqK7BSwoDv7WA8jqR3B2pO18Qd74lQPOBeah0mZXCVrVyFtJOhk5D_ez54DszES_Vl0Tt9ZvxsTQKauxf8NvmerAHTrEhtqIWPEByTlXio4Qq3tEmR7rnS2gKGQL5gOLkhsElB4i3boXS_DKIGCdBgC4y_boA/p.png?size_mode=5",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
