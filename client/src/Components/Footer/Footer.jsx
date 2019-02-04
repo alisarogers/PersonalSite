@@ -5,9 +5,6 @@ import linkedin from './images/linkedin.png';
 import './Footer.css'
 
 export default class Footer extends Component {
-    constructor() { 
-       super();
-    }
 
     render() {
         return (

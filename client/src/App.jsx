@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/AboutPage/About';
 import Resume from './Components/Resume/Resume';
 import Projects from './Components/Projects/Projects';
-import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
-
-import CssBaseline from '@material-ui/core/CssBaseline';
 import * as ROUTES from './constants/routes';
 
 const theme = createMuiTheme({

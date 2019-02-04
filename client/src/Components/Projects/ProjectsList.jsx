@@ -14,8 +14,7 @@ const styles = theme => ({
 });
 
 export function ProjectsList(props) {
-  const { classes } = props;
-  const bull = <span >•</span>;
+
   return (
     <div>
       <Paper className="bottomPaperStyle" elevation={1}>

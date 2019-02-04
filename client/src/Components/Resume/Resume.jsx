@@ -6,7 +6,6 @@ import { pdfjs } from 'react-pdf';
 import useResume from './resume.pdf'
 import './Resume.css'
 import { SimpleCard } from '../Card'
-import Footer from '../Footer/Footer';
 import Paper from '@material-ui/core/Paper';
 import { NavTab } from '../Tab/NavTab'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
